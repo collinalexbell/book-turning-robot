@@ -48,22 +48,25 @@ module base_bottom() {
 		//Ethernet, USBs
 		translate([pi_x/2,-pi_y/2 +.5,-pi_z/2+floor_width]){
 			translate([0,1.5,0])
+				cube([10,15.3,25]);
+
+			translate([0, 19, 0])
+				cube([10,15.3, 25]);
+
+			translate([0,37.5,0])
 				cube([10,17,25]);
-
-			translate([0, 22, 0])
-				cube([10,14.5, 25]);
-
-			translate([0,39,0])
-				cube([10,14.5,25]);
 		}
 
 		translate([-pi_x/2 +1.5 + pi_x_clearance, -pi_y/2-5, -pi_z/2+floor_width]){
 			// Power, HDMI, Headphones
-			translate([6,0,0])
+			translate([5.8,0,0])
 				cube([10,10,25]);
 
-			translate([24, 0, 0])
-				cube([16,10,25]);
+			translate([21, 0, 0])
+				cube([7,10,25]);
+
+			translate([34.5, 0, 0])
+				cube([7,10,25]);
 
 			translate([49,0,0])
 				cube([9, 10, 25]);
