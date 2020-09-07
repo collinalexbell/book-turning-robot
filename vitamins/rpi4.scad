@@ -18,7 +18,7 @@ module RPi4() {
 
 	translate([3.5 + 7.7 + 14.8 + 13.5 + 7 + 7.5 - HeadphoneJackWidth/2, 0, baseBoardHeight]) HeadphoneJack();
 	translate([UsbAndEthernetOffset, 9 - UsbADepth/2, baseBoardHeight]) UsbA();
-	translate([UsbAndEthernetOffset, 27 - UsbADepth/2, baseBoardHeight]) UsbA();
+	translate([UsbAndEthernetOffset, 26.5 - UsbADepth/2, baseBoardHeight]) UsbA();
 	translate([UsbAndEthernetOffset, 45.7 - EthernetDepth/2, baseBoardHeight]) Ethernet();
 
 	//Diplay Ribbon Cable
@@ -61,10 +61,10 @@ module RPi4() {
 	};
 
 	module UsbC() {
-		cube([7, 6, 3.2-baseBoardHeight]);
+		cube([9, 6, 3.2-baseBoardHeight]);
 	}
 
-	HdmiMiniWidth = 5;
+	HdmiMiniWidth = 6.5;
 	module HdmiMini() {
 		cube([5, 6, 3.0-baseBoardHeight]);
 	}
@@ -84,15 +84,15 @@ module RPi4() {
 		translate([HeadphoneJackWidth/2, 0, HeadphoneJackWidth/2]) rotate([90,0,0]) cylinder(d=HeadphoneJackWidth, h=2);
 	}
 
-	UsbADepth = 15;
+	UsbADepth = 14;
 	module UsbA() {
-		cube([20, UsbADepth, 16-baseBoardHeight]);
+		cube([20, UsbADepth, 15]);
 	}
 
 	EthernetDepth = 16;
-	EthernetWidth = 20;
+	EthernetWidth = 21;
 	module Ethernet() {
-		cube([EthernetWidth, EthernetDepth, 13.5-baseBoardHeight]);
+		cube([EthernetWidth, EthernetDepth, 13]);
 	}
 
 	module GPIO() {
