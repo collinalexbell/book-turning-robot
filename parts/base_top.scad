@@ -37,6 +37,12 @@ module base_top() {
 
 			translate([1.5/2,1.5/2,floor_width+.05])
 			cube([bottom_base_block_x,bottom_base_block_y, 10]);
+
+			translate([-2,3,3]) {
+				cube([20, 53, 20]);
+			}
+
+			translate([35,7,-0.5]) cube([20, 4, 2]);
 	}
 }
 
