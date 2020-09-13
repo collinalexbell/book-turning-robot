@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/kuberlog/code/colleague-bot/body/urdf/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/kuberlog/code/colleague-bot/body/urdf/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/kuberlog/code/colleague-bot/body/urdf/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/kuberlog/code/colleague-bot/body/urdf/src:$ROS_PACKAGE_PATH"
+export PWD='/home/kuberlog/code/colleague-bot/body/ros/build'

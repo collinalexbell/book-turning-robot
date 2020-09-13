@@ -1,0 +1,13 @@
+/home/kuberlog/code/colleague-bot/body/ros/install/_setup_util.py
+/home/kuberlog/code/colleague-bot/body/ros/install/env.sh
+/home/kuberlog/code/colleague-bot/body/ros/install/setup.bash
+/home/kuberlog/code/colleague-bot/body/ros/install/local_setup.bash
+/home/kuberlog/code/colleague-bot/body/ros/install/setup.sh
+/home/kuberlog/code/colleague-bot/body/ros/install/local_setup.sh
+/home/kuberlog/code/colleague-bot/body/ros/install/setup.zsh
+/home/kuberlog/code/colleague-bot/body/ros/install/local_setup.zsh
+/home/kuberlog/code/colleague-bot/body/ros/install/.rosinstall
+/home/kuberlog/code/colleague-bot/body/ros/install/lib/pkgconfig/body.pc
+/home/kuberlog/code/colleague-bot/body/ros/install/share/body/cmake/bodyConfig.cmake
+/home/kuberlog/code/colleague-bot/body/ros/install/share/body/cmake/bodyConfig-version.cmake
+/home/kuberlog/code/colleague-bot/body/ros/install/share/body/package.xml

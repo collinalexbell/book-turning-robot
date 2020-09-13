@@ -1,0 +1,8 @@
+prefix=/home/kuberlog/code/colleague-bot/body/ros/install
+
+Name: colleague_description
+Description: Description of colleague_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

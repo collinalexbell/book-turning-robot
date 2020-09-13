@@ -1,0 +1,8 @@
+prefix=/home/kuberlog/code/colleague-bot/body/ros/install
+
+Name: colleague_gazebo
+Description: Description of colleague_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
