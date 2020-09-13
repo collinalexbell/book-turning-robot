@@ -5,7 +5,7 @@
 			<geometry>
 				<box size="0.15  0.03  0.03"/>
 			</geometry>
-			<origin rpy="0 0 0" xyz="0  0.07  0"/>
+			<origin rpy="0 0 0" xyz="0.075 0 0"/>
 		</visual>
 	</link>
 	<link name = "left_backarm">
@@ -13,7 +13,7 @@
 			<geometry>
 				<box size="0.15  0.03  0.03"/>
 			</geometry>
-			<origin rpy="0 0 0" xyz="0.15  0.07  0"/>
+			<origin rpy="0 0 0" xyz="0.075 0 0"/>
 		</visual>
 	</link>
 	<link name = "right_forearm">
@@ -21,7 +21,7 @@
 			<geometry>
 				<box size="0.15  0.03  0.03"/>
 			</geometry>
-			<origin rpy="0 0 0" xyz="0  -0.07  0"/>
+			<origin rpy="0 0 0" xyz="0.075  0  0"/>
 		</visual>
 	</link>
 	<link name = "right_backarm">
@@ -29,35 +29,43 @@
 			<geometry>
 				<box size="0.15  0.03  0.03"/>
 			</geometry>
-			<origin rpy="0 0 0" xyz="0.15  -0.07  0"/>
+			<origin rpy="0 0 0" xyz="0.075 0 0"/>
 		</visual>
 	</link>
-	<link name = "body">
+	<link name = "base_link">
 		<visual>
 			<geometry>
 				<box size="0.06  0.14  0.16"/>
 			</geometry>
-			<origin rpy="0 0 0" xyz="0  0  0"/>
+			<origin rpy="0 0 0" xyz="-0.03  0  0"/>
 		</visual>
 	</link>
-	<joint name="right_shoulder" type="fixed">
-		<parent link="body"/>
+	<joint name="right_shoulder" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-0.6" upper="0.6" velocity="0.5"/>
+		<parent link="base_link"/>
 		<child link="right_backarm"/>
-		<origin xyz="0 0 0"/>
+		<origin xyz="0 -0.07 0"/>
 	</joint>
-	<joint name="left_shoulder" type="fixed">
-		<parent link="body"/>
+	<joint name="left_shoulder" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-0.6" upper="0.6" velocity="0.5"/>
+		<parent link="base_link"/>
 		<child link="left_backarm"/>
-		<origin xyz="0 0 0"/>
+		<origin xyz="0 0.07 0"/>
 	</joint>
-	<joint name="right_elbow" type="fixed">
+	<joint name="right_elbow" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-0.6" upper="0.6" velocity="0.5"/>
 		<parent link="right_backarm"/>
 		<child link="right_forearm"/>
-		<origin xyz="0 0 0"/>
+		<origin xyz="0.15 0 0"/>
 	</joint>
-	<joint name="left_elbow" type="fixed">
+	<joint name="left_elbow" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1000.0" lower="-0.6" upper="0.6" velocity="0.5"/>
 		<parent link="left_backarm"/>
 		<child link="left_forearm"/>
-		<origin xyz="0 0 0"/>
+		<origin xyz="0.15 0 0"/>
 	</joint>
 </robot>
