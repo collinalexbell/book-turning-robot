@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot name="arms">
+	<link name = "left_forearm">
+		<visual>
+			<geometry>
+				<box size="0.15  0.03  0.03"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0  0.07  0"/>
+		</visual>
+	</link>
+	<link name = "left_backarm">
+		<visual>
+			<geometry>
+				<box size="0.15  0.03  0.03"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.15  0.07  0"/>
+		</visual>
+	</link>
+	<link name = "right_forearm">
+		<visual>
+			<geometry>
+				<box size="0.15  0.03  0.03"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0  -0.07  0"/>
+		</visual>
+	</link>
+	<link name = "right_backarm">
+		<visual>
+			<geometry>
+				<box size="0.15  0.03  0.03"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.15  -0.07  0"/>
+		</visual>
+	</link>
+	<link name = "body">
+		<visual>
+			<geometry>
+				<box size="0.06  0.14  0.16"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0  0  0"/>
+		</visual>
+	</link>
+	<joint name="right_shoulder" type="fixed">
+		<parent link="body"/>
+		<child link="right_backarm"/>
+		<origin xyz="0 0 0"/>
+	</joint>
+	<joint name="left_shoulder" type="fixed">
+		<parent link="body"/>
+		<child link="left_backarm"/>
+		<origin xyz="0 0 0"/>
+	</joint>
+	<joint name="right_elbow" type="fixed">
+		<parent link="right_backarm"/>
+		<child link="right_forearm"/>
+		<origin xyz="0 0 0"/>
+	</joint>
+	<joint name="left_elbow" type="fixed">
+		<parent link="left_backarm"/>
+		<child link="left_forearm"/>
+		<origin xyz="0 0 0"/>
+	</joint>
+</robot>
