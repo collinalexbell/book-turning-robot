@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/kuberlog/code/colleague-bot/body/urdf/devel -DCMAKE_INSTALL_PREFIX=/home/kuberlog/code/colleague-bot/body/urdf/install -G Unix Makefiles

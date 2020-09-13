@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kuberlog/code/colleague-bot/body/urdf/devel/setup.sh
