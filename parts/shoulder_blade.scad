@@ -12,8 +12,8 @@ module shoulder_blade() {
 		cube([20.4, 6.4, 0.8], center=true);
 		translate([10.8/2,0.9-0.6,0]) cylinder(d=0.5, h=5, center=true);
 		translate([-10.8/2,0.9-0.6,0]) cylinder(d=0.5, h=5, center=true);
-		translate([16/2,0.9,0]) cylinder(d=0.5, h=6.5, center=true);
-		translate([-16/2,0.9,0]) cylinder(d=0.5, h=6.5, center=true);
+		translate([16/2,0.9,0]) cylinder(d=0.7, h=6.5, center=true);
+		translate([-16/2,0.9,0]) cylinder(d=0.7, h=6.5, center=true);
 		translate([16/2,0,0]) holes();
 		translate([-16/2,0,0]) holes();
 		translate([0,-2.3,0]) cube([21.4, 2.0, 1.2], center=true);
