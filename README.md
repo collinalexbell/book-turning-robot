@@ -1,4 +1,4 @@
-# Book turning robot
+# Book page turning robot
 <img src="pics/robot.jpg">
 
 # How it works (w/ low quality pics)
